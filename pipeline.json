@@ -16,6 +16,6 @@
     "repository": "edwardsdl/sample-java"
   },
   "deploy": {
-    "containerPort": 8080
+    "containerPort": 80
   }
 }
