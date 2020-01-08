@@ -20,7 +20,7 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
     - name: GitHub Action for Heroku
-    - uses: actions/heroku@1.0.0
+      uses: actions/heroku@1.0.0
     - run: |
         heroku container:login $HEROKU_API_KEY
         
