@@ -13,9 +13,9 @@
   },
   "archive": {
     "registry": "docker.io",
-    "repository": "edwardsdl/sample-java"
+    "repository": "gsayas/demo"
   },
   "deploy": {
-    "containerPort": 80
+    "containerPort": 8080
   }
 }
