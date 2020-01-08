@@ -6,6 +6,10 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    
+    env:
+      HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      HEROKU_APP: ${{ secrets.HEROKU_APP }}
 
     steps:
     - uses: actions/checkout@v1
@@ -16,4 +20,7 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
     - name: GitHub Action for Heroku
-      uses: actions/heroku@1.0.0
+    - uses: actions/heroku@1.0.0
+    - run: |
+        heroku container:login $HEROKU_API_KEY
+        
